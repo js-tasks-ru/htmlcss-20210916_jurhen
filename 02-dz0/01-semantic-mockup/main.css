@@ -1,0 +1,50 @@
+* {
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0;
+}
+
+header {
+  background-color: red;
+  text-align: center;
+  padding: 10px;
+}
+
+header h1 {
+  font-size: 3rem;
+}
+
+nav {
+  background-color: orange;
+  text-align: center;
+  padding: 15px;
+}
+
+nav .navigation {
+  padding-right: 10px;
+}
+
+nav .navigation a {
+  font-size: 1.8rem;
+}
+
+main {
+  background-color: green;
+  padding: 10px;
+}
+
+article {
+  background-color: blue;
+  margin-bottom: 5px;
+  padding: 10px 10px 30px 10px;
+}
+
+article h2 {
+  margin-bottom: 15px;
+}
+
+footer {
+  background-color: purple;
+  text-align: center;
+  font-size: 3rem;
+}
