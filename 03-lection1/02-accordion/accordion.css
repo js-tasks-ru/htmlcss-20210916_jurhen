@@ -6,10 +6,11 @@
   box-sizing: border-box;
   border-radius: 8px;
   color: var(--grey-4, #495057);
-}
-
-.accordion__item[open] .accordion__summary:after {
-  content: '\25BD';
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .accordion__item:not(:last-child) {
@@ -19,16 +20,21 @@
 .accordion__summary {
   margin: 24px 32px;
   list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.accordion__item[open] .accordion__summary:after {
+  content: '\25BD';
+}
+
+.accordion__item[open] .accordion__summary {
+  margin: 24px 32px 16px;
 }
 
 .accordion__summary:after {
   content: ' \25B3';
   font-size: 0.7em;
-  float: right;
-}
-
-.accordion__summary::-webkit-details-marker {
-  float: right;
 }
 
 .accordion__content {
