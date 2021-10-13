@@ -41,12 +41,12 @@
   margin-bottom: 8px;
 }
 
-.skeleton__line_shortest {
-  width: 172px;
+.skeleton__line_short {
+  width: 40%;
 }
 
-.skeleton__line_short {
-  width: 257px;
+.skeleton__line_middle {
+  width: 60%;
 }
 
 .skeleton__line_long {
