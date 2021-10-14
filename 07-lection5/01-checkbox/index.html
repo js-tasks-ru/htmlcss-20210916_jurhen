@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!-- Страница чекбокса -->
+<html lang="ru">
+  <head>
+    <link rel="stylesheet" href="../../assets/css/main.css" />
+    <link rel="stylesheet" href="./checkbox.css" />
+  </head>
+  <body>
+    <label class="checkbox__label">
+      <input
+        type="checkbox"
+        class="checkbox__elem"
+        id="options_1"
+        name="options"
+        value="default"
+      />
+      <div class="checkbox__text">Default</div>
+    </label>
+
+    <div class="checkbox">
+      <input
+        type="checkbox"
+        class="checkbox__elem"
+        id="options_2"
+        name="options"
+        value="checked"
+        checked
+      />
+      <label class="checkbox__label" for="options_2">Checked</label>
+    </div>
+
+    <div class="checkbox">
+      <input
+        type="checkbox"
+        class="checkbox__elem"
+        id="options_2"
+        name="options"
+        value="disabled"
+        disabled
+      />
+      <label class="checkbox__label" for="options_2">Disabled</label>
+    </div>
+  </body>
+</html>
