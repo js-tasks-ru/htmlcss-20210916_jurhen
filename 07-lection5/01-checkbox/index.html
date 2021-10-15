@@ -14,10 +14,15 @@
         name="options"
         value="default"
       />
+      <div class="checkbox__control">
+        <svg class="checkbox__icon">
+          <use xlink:href="../../assets/images/icons.svg#checked"></use>
+        </svg>
+      </div>
       <div class="checkbox__text">Default</div>
     </label>
 
-    <div class="checkbox">
+    <label class="checkbox__label">
       <input
         type="checkbox"
         class="checkbox__elem"
@@ -26,19 +31,29 @@
         value="checked"
         checked
       />
-      <label class="checkbox__label" for="options_2">Checked</label>
-    </div>
+      <div class="checkbox__control">
+        <svg class="checkbox__icon">
+          <use xlink:href="../../assets/images/icons.svg#checked"></use>
+        </svg>
+      </div>
+      <div class="checkbox__text">Checked</div>
+    </label>
 
-    <div class="checkbox">
+    <label class="checkbox__label">
       <input
         type="checkbox"
         class="checkbox__elem"
-        id="options_2"
+        id="options_3"
         name="options"
         value="disabled"
         disabled
       />
-      <label class="checkbox__label" for="options_2">Disabled</label>
-    </div>
+      <div class="checkbox__control">
+        <svg class="checkbox__icon">
+          <use xlink:href="../../assets/images/icons.svg#checked"></use>
+        </svg>
+      </div>
+      <div class="checkbox__text">Disabled</div>
+    </label>
   </body>
 </html>
