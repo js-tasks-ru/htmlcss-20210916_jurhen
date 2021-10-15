@@ -17,6 +17,7 @@
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  transition: 0.5s ease;
 }
 
 .toggle__button:checked {
@@ -42,6 +43,7 @@
   background-color: var(--blue-2);
   border-radius: 50%;
   transform: translateX(0);
+  transition: 0.5s ease;
 }
 
 .toggle__button:checked::after {
