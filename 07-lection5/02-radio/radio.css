@@ -1,0 +1,35 @@
+.radio {
+  display: flex;
+  align-items: center;
+}
+
+.radio__box {
+  width: 28px;
+  height: 28px;
+}
+
+.radio__text {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--grey-4);
+  margin-left: 12px;
+}
+
+.radio__box:focus ~ .radio__text {
+  text-decoration: underline;
+}
+
+.radio__box:checked {
+  background: var(--blue-2);
+}
+
+.radio__box:checked ~ .radio__text {
+  text-decoration: none;
+}
+
+.radio__box:disabled ~ .radio__text {
+  color: var(--grey-2);
+}
