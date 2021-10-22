@@ -57,6 +57,10 @@
   border: 1px solid var(--blue-2);
 }
 
+.input__success ~ .input__icon {
+  fill: var(--success);
+}
+
 .input__success:focus,
 .input__success:active {
   border-color: var(--blue-2);
@@ -65,6 +69,10 @@
 
 .input__invalid {
   border: 1px solid var(--red);
+}
+
+.input__invalid ~ .input__icon {
+  fill: var(--error);
 }
 
 .input__invalid:focus,
