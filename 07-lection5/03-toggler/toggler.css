@@ -1,0 +1,66 @@
+.toggle {
+  display: flex;
+  align-items: center;
+}
+
+.toggle__button {
+  position: relative;
+  display: inline-block;
+  width: 52px;
+  height: 28px;
+  vertical-align: top;
+  background: var(--white);
+  border: 1px solid var(--grey-6);
+  border-radius: 30px;
+  outline: none;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  transition: 0.5s ease;
+}
+
+.toggle__button:checked {
+  background-color: var(--blue-2);
+}
+
+.toggle__button:disabled {
+  background-color: var(--grey-2);
+}
+
+.toggle__button:focus ~ .toggle__text {
+  text-decoration: underline;
+}
+
+.toggle__button::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  left: 2px;
+  top: 1px;
+  width: 24px;
+  height: 24px;
+  background-color: var(--blue-2);
+  border-radius: 50%;
+  transform: translateX(0);
+  transition: 0.5s ease;
+}
+
+.toggle__button:checked::after {
+  transform: translateX(calc(100% - 1px));
+  background-color: var(--white);
+}
+
+.toggle__button:disabled::after {
+  background-color: var(--grey-3);
+}
+
+.toggle__text {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--grey-4);
+  margin-left: 12px;
+}
